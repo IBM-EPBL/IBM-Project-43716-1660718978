@@ -1,4 +1,48 @@
-#submit {
-    align-items: center;
-    align-content: center;
+html, body { 
+  height: 100%; 
+  margin: 0; 
+  overflow: hidden;
+}
+body { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  background: #000; 
+}
+main {
+  display: flex;
+}
+p {
+  line-height: 1;
+}
+span {
+  display: block;
+  width: 2vmax; 
+  height: 2vmax; 
+  font-size: 2vmax; 
+  color: #9bff9b11;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+form{
+  text-align: center;
+  width: 100%;
+
+}
+#textField{
+  width: 60%;
+  height: 40px;
+  margin: 0 auto;
+  border: none; 
+  border-radius: 20px;
+}
+#submitButton{
+  height: 40px;
+  margin: 0 auto;
+  border: none; 
+  border:solid 1px rgb(52, 255, 1);
+  background-color: rgb(52, 255, 1);
+  color:rgb(255, 255, 255) ;
+  border-radius: 50%;
 }
