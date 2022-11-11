@@ -1,7 +1,6 @@
 html, body { 
   margin: 0; 
   overflow: hidden;
- 
 }
 
 body{
@@ -14,14 +13,15 @@ form{
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 100px;
-  left:100px;
+  top: 250px;
+  left: 350px;;
   text-align: center;
   /* display: flex; */
 
 }
 #textField{
   height: 40px; 
+  width: 250px;
   margin: 0 auto;
   border: none; 
   border-radius: 20px;
