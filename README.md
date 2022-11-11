@@ -29,6 +29,7 @@ Phishing is a type of social engineering attack often used to steal user data, i
 - [Customer Journey](https://github.com/IBM-EPBL/IBM-Project-43716-1660718978/blob/main/Project%20Designing%20%26%20Planning/Project%20Design%20Phase-II/Customer%20Journey.pdf)
 - [Solution Requirement](https://github.com/IBM-EPBL/IBM-Project-43716-1660718978/blob/main/Project%20Designing%20%26%20Planning/Project%20Design%20Phase-II/Solution%20Requirements.pdf)
 - [Technology Architecture](https://github.com/IBM-EPBL/IBM-Project-43716-1660718978/blob/main/Project%20Designing%20%26%20Planning/Project%20Design%20Phase-II/Technology%20Architecture.pdf)
+- [Data flow](https://github.com/IBM-EPBL/IBM-Project-43716-1660718978/blob/main/Project%20Designing%20%26%20Planning/Project%20Design%20Phase-II/DATA%20FLOW.pdf)
 # [Project Development Phase](https://github.com/IBM-EPBL/IBM-Project-43716-1660718978/tree/main/Project%20Development%20Phase)
 - [Sprint 1](https://github.com/IBM-EPBL/IBM-Project-43716-1660718978/tree/main/Project%20Development%20Phase/Sprint%201)
 - [Sprint 2](https://github.com/IBM-EPBL/IBM-Project-43716-1660718978/tree/main/Project%20Development%20Phase/Sprint%202)
