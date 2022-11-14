@@ -3,7 +3,7 @@ from flask_cors import CORS
 import sklearn
 from sklearn.linear_model import LogisticRegression
 import pickle
-import inputScript
+from inputs import devices
 
 app = Flask(__name__)
 CORS(app)
@@ -13,7 +13,7 @@ model = pickle.load(open('Project Development Phase\Sprint 3\Phishing_model.pkl'
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('\Sprint 4\index.html')
 
 @app.route('/predict',methods=['POST'])
 def predict():
