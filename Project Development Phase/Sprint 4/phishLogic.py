@@ -342,7 +342,7 @@ def DNSRecord(url):
 def web_traffic(url):
     try:
         rank = BeautifulSoup(urllib.request.urlopen("http://data.alexa.com/data?cli=10&dat=s&url=" + url).read(), "xml").find("REACH")['RANK']
-    except TypeError:
+    except :
         return -1
     rank= int(rank)
     if (rank<100000):
