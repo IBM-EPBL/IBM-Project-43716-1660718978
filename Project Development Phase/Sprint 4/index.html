@@ -6,9 +6,10 @@
     
 </head>
 <body>
-    <form action="{{url_for{predict}}}" method="post">
+    <form action="{{y_predict}}" method="post">
         <input id="textField"  type="text" name ="url" placeholder="Enter URL" required="required">
-        <button id="submitButton" type="submit" name="req_button" placeholder ="Find">Find</button>
+        <button id="submitButton" type="submit" value="submit" placeholder ="Find">Find</button>
     </form>
+        <div id='result'>{{ prediction_text }}</div>
 </body>
 </html>

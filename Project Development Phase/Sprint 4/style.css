@@ -10,12 +10,13 @@ body{
   background-size: cover;
 }
 form{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 250px;
-  left: 350px;;
-  text-align: center;
+  /* width: 100%;
+  height: 100%; */
+  position: fixed;
+  top: 45%;
+  left: 70%;
+  /* right: 250px; */
+  /* text-align: center; */
   /* display: flex; */
 
 }
@@ -35,4 +36,12 @@ form{
   background-color: rgb(52, 255, 1);
   color:rgb(255, 255, 255) ;
   border-radius: 50%;
+}
+
+#result {
+  position: fixed;
+  left: 80%;
+  bottom: 30%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
