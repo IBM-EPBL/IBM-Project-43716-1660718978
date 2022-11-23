@@ -245,7 +245,7 @@ def Submitting_to_email(url):
         return -1
 
 def Abnormal_URL(url):
-    subDomain, domain, suffix = extract(url)
+    domain = extract(url)
     try:
         domain = whois.whois(url)
         hostname=domain.domain_name[0].lower()
@@ -276,7 +276,7 @@ def on_mouseover(url):
         soup = BeautifulSoup(opener, 'lxml')
         
         no_of_script =0
-        for meta in soup.find_all(onmouseover=True):
+        for _ in soup.find_all(onmouseover=True):
             no_of_script = no_of_script+1
         if(no_of_script==0):
             return 1
@@ -305,7 +305,7 @@ def Iframe(url):
         opener = urllib.request.urlopen(url).read()
         soup = BeautifulSoup(opener, 'lxml')
         nmeta=0
-        for meta in soup.findAll('iframe',src=True):
+        for _ in soup.findAll('iframe',src=True):
             nmeta= nmeta+1
         if(nmeta!=0):
             return -1
@@ -327,7 +327,6 @@ def age_of_domain(url):
 
 def DNSRecord(url):
     
-    subDomain, domain, suffix = extract(url)
     try:
         dns = 0
         domain_name = whois.whois(url)
@@ -355,11 +354,11 @@ def Page_Rank(url):
 
 def Google_Index(url):
     try:
-        subDomain, domain, suffix = extract(url)
+        domain, suffix = extract(url)
         a=domain + '.' + suffix
         query = url
         for j in search(query, tld="co.in", num=5, stop=5, pause=2):
-            subDomain, domain, suffix = extract(j)
+            domain, suffix = extract(j)
             b=domain + '.' + suffix
         if(a==b):
             return 1
@@ -374,7 +373,7 @@ def Links_pointing_to_page (url):
         opener = urllib.request.urlopen(url).read()
         soup = BeautifulSoup(opener, 'lxml')
         count = 0
-        for link in soup.find_all('a'):
+        for _ in soup.find_all('a'):
             count += 1
         if(count>=2):
             return 1
